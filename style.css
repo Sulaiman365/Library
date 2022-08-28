@@ -1,0 +1,104 @@
+#container
+{
+    display: flex;
+    justify-items: center;
+    min-width: 100%;
+    min-height: 970px;
+}
+#library-pic
+{
+    display: flex;
+    min-height: 100%;
+    min-width: 20%;
+    background-image: url('pexels-dids-5499560.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+}
+#logo-container
+{
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 50rem;
+    height: 30px;
+    width: 100%;
+    background-color:rgba(255,255,255,0.3);
+    justify-content: center;
+    text-align: center;
+}
+.logo
+{
+    font-size: 24px;
+    font-family: Garamond;
+    color:rgb(49, 14, 14);
+    font-weight: bold;
+    font-style: italic;
+}
+#books-container
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.08fr 0.82fr 0.1fr;
+    background-color: azure;
+    min-width: 80%;
+    min-height: 100%;
+}
+.header
+{
+    display: flex;
+    background-color: rgb(49, 14, 14);
+    width: 100%;
+    color: white;
+    font-size: 32px;
+    font-family: Garamond;
+    justify-content: center;
+}
+.header>div{
+    font-weight: bold;
+    padding: 12px;
+}
+#add-book
+{
+    display: flex;
+    justify-content: center;
+}
+button
+{
+    background-color: rgb(49, 14, 14);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    height: 2rem;
+    width: 8rem;
+}
+button:active
+{
+    background-color: lightgray;
+}
+.books
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.08fr 0.92fr;
+    min-height: 100%;
+    min-width: 100%;
+}
+.title
+{
+    display: grid;
+    min-height: 100%;
+    min-width: 100%;
+    grid-template-columns: repeat(4, 0.25fr);
+    background-color: rgb(73, 168, 168);
+}
+.title>div{
+    display: flex;
+    justify-content: left;
+    font-size: 20px;
+    padding: 14px;
+    font-weight: bold;
+    color: rgb(49, 14, 14);
+}
