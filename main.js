@@ -1,15 +1,33 @@
-let myLibrary = ['The Hobbit','J.R.R. Tolkien','295','not yet read'];
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
 
 function Book(enteredBook)
 {
     this.title = enteredBook[0];
     this.author = enteredBook[1];
     this.pages = enteredBook[2];
-    this.read = enteredBook[3];
+    this.read = 'read';
     this.info = function()
     {
         return `${this.title} by ${this.author}, ${this.pages} pages, ${this.read}`
     }
 }
-const theHobbit = new Book(myLibrary);
-console.log(theHobbit.info());
+
+
+let myLibrary = [];
+let libraryBook;
+const addBook = document.querySelector('#add-btn');
+
+addBook.addEventListener('click',() =>{
+  myLibrary[0] = document.getElementById('title').value;
+  myLibrary[1] = document.getElementById('author').value;
+  myLibrary[2] = document.getElementById('pages').value;
+
+  libraryBook = new Book(myLibrary);
+})
+
+

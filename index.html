@@ -15,16 +15,26 @@
             </div>
             <div id="books-container">
                  <div class="header"><div>Books</div></div>
-                 <div class="books">
-                    <div class="title">
-                        <div>Title</div>
-                        <div>Author</div>
-                        <div>Pages</div>
-                        <div>Read</div>
+                 <div class="books-card-container"></div>
+                 <div id="add-book">     
+                    <button class="open-button" onclick="openForm()">Add Book</button>
+
+                    <div class="form-popup" id="myForm">
+                      <div action="" class="form-container">
+                        <h1>Book Information</h1>
+                    
+                        <label for="title"><b>Title</b></label>
+                        <input  id="title" type="text" placeholder="Enter the book title" name="title" required>
+                        <label for="author"><b>Author</b></label>
+                        <input  id="author" type="text" placeholder="Enter the name of the author" name="author" required>
+                        <label for="pages"><b>Number of Pages</b></label>
+                        <input  id="pages" type="text" placeholder="Enter the no. of pages" name="pages" required>
+                    
+                        <button type="submit" class="btn" id="add-btn">Add</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                      </div>
                     </div>
-                    <div class="list"></div>
-                 </div>
-                 <div id="add-book"><button>Add Book</button></div>
+                </div>
             </div>
         </div>
     </body>
