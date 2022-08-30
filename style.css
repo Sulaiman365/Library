@@ -89,7 +89,13 @@ button
     min-height: 100%;
     min-width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(250px,0.25fr));
-    background-color: repeat(4,0.25fr);
+    grid-template-rows: repeat(auto-fit,250px);
+    gap:15px;
+    padding:10px
+}
+.books-card-container>div
+{
+  border:solid maroon
 }
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
@@ -152,5 +158,20 @@ button
   .form-container .btn:hover, .open-button:hover {
     opacity: 1;
   }
-
-  
+.book-card{
+  display:grid;
+  grid-template-rows: repeat(4,0.25fr);
+  padding:10px
+}
+.book-card-div{
+  display:flex;
+  padding:2px;
+  font-size:20px;
+}
+.read-unread{
+  background-color:rgb(23, 88, 88);
+}
+.book-delete
+{
+  background-color:red;
+}
