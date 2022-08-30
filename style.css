@@ -25,7 +25,7 @@ html, body {
     display: flex;
     margin-top: 5rem;
     margin-bottom: 50rem;
-    height: 30px;
+    height: fit-content;
     width: 100%;
     background-color:rgba(255,255,255,0.3);
     justify-content: center;
@@ -43,11 +43,12 @@ html, body {
 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.08fr 0.82fr 0.1fr;
+    grid-template-rows: 0.08fr 0.75fr 1fr 0.07fr;
     background-color: azure;
     min-width: 80%;
     min-height: 100%;
 }
+
 .header
 {
     display: flex;
@@ -102,7 +103,7 @@ button
 {
   border:solid maroon
 }
-/* Button used to open the contact form - fixed at the bottom of the page */
+
 .open-button {
     cursor: pointer;
     opacity: 0.8;
@@ -111,7 +112,7 @@ button
     width: 280px;
   }
   
-  /* The popup form - hidden by default */
+  
   .form-popup {
     display: none;
     position: fixed;
@@ -120,14 +121,14 @@ button
     z-index: 9;
   }
   
-  /* Add styles to the form container */
+
   .form-container {
     max-width: 300px;
     padding: 10px;
     background-color: white;
   }
   
-  /* Full-width input fields */
+ 
   .form-container input[type=text]{
     width: 88%;
     padding: 15px;
@@ -136,13 +137,13 @@ button
     background: #f1f1f1;
   }
   
-  /* When the inputs get focus, do something */
+  
   .form-container input[type=text]:focus{
     background-color: #ddd;
     outline: none;
   }
   
-  /* Set a style for the submit/login button */
+
   .form-container .btn {
     background-color: rgb(23, 88, 88);
     color: white;
@@ -154,19 +155,20 @@ button
     opacity: 0.8;
   }
   
-  /* Add a red background color to the cancel button */
+ 
   .form-container .cancel {
     background-color: red;
   }
   
-  /* Add some hover effects to buttons */
+ 
   .form-container .btn:hover, .open-button:hover {
     opacity: 1;
   }
 .book-card{
   display:grid;
   grid-template-rows: repeat(4,0.25fr);
-  padding:10px
+  padding:10px;
+  gap: 10px;
 }
 .book-card-div{
   display:flex;
@@ -175,8 +177,18 @@ button
 }
 .read-unread{
   background-color:rgb(23, 88, 88);
+  opacity: 0.8;
 }
 .book-delete
 {
   background-color:red;
+  opacity: 0.7;
+}
+.book-delete:hover
+{
+  opacity: 1;
+}
+.read-unread:hover
+{
+  opacity: 1;
 }
