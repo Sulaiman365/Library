@@ -136,6 +136,14 @@ button
     border: none;
     background: #f1f1f1;
   }
+  .checkbox-container {
+    display: grid;
+    width: 100%;
+    width: 100%;
+    grid-template-columns: 0.8fr 0.2fr;
+    margin: 5px 0 22px 0;
+    
+  }
   
   
   .form-container input[type=text]:focus{

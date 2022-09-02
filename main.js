@@ -63,7 +63,15 @@ addBook.addEventListener('click',() =>{
         bookAuthor.textContent = `Author: ${libraryBook.author}`;
         bookPages.textContent = `Pages: ${libraryBook.pages}`;
         bookDelete.textContent = 'Delete';
-        readUnread.textContent = "Not Read";
+
+        if (document.getElementById("read-check").checked == true )
+        {
+          readUnread.textContent = "Read";
+        }
+        else if (document.getElementById("read-check").checked == false)
+        {
+          readUnread.textContent = "Not Read";
+        }     
 
         document.getElementById("myForm").style.display = "none";
       }
