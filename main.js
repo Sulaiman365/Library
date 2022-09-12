@@ -5,7 +5,9 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 
-function Book(enteredBook)
+
+class Book {
+  constructor (enteredBook)
 {
     this.title = enteredBook[0];
     this.author = enteredBook[1];
@@ -15,6 +17,7 @@ function Book(enteredBook)
     {
         return `${this.title} by ${this.author}, ${this.pages} pages, ${this.read}`
     }
+}
 }
 
 
